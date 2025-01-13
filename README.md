@@ -1,9 +1,11 @@
 # Mon Portfolio
 
 ## 📋 Description
+
 Portfolio professionnel développé avec Bootstrap, présentant mes projets et compétences en développement web. Ce site responsive met en valeur mon travail à travers une interface moderne et élégante.
 
 ## 🚀 Fonctionnalités
+
 - Design responsive compatible tous appareils
 - Sections pour projets, compétences et expériences
 - Formulaire de contact interactif
@@ -11,20 +13,25 @@ Portfolio professionnel développé avec Bootstrap, présentant mes projets et c
 - Animations et transitions modernes
 
 ## 🛠️ Technologies Utilisées
+
 - HTML5
 - CSS3
 - Bootstrap 5
 - JavaScript
 
-
 ## 📁 Structure du Projet
+
 ```
 portfolio-mns/
+├── src
+├── custom.css
 ├── index.html
-└── README.md
+├── README.md
+└── script.js
 ```
 
 ## 📧 Contact
-- Email : 
-- LinkedIn : 
-- Portfolio : 
+
+- Email :
+- LinkedIn :
+- Portfolio :
