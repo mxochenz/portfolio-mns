@@ -1,17 +1,17 @@
 :root {
-  --color-background: #282C33;
-  --color-text: #FFFFFF;
+  --color-background: #282c33;
+  --color-text: #ffffff;
   --color-text-muted: rgba(255, 255, 255, 0.7);
-  --color-accent: #C778DD;
-  --color-border: #ABB2BF;
-  --gradient-accent: linear-gradient(90deg, #C778DD 0%, #8E44AD 100%);
+  --color-accent: #c778dd;
+  --color-border: #abb2bf;
+  --gradient-accent: linear-gradient(90deg, #c778dd 0%, #8e44ad 100%);
 }
 
 /* Base Styles */
 body {
   background-color: var(--color-background);
   color: var(--color-text);
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   line-height: 1.6;
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -117,7 +117,7 @@ body {
 
 /* Projects Section */
 .projects-section {
-  padding: 60px 0 60px;
+  padding-top: 60px;
 }
 
 .project-card {
@@ -157,6 +157,9 @@ body {
 }
 
 /* Skills Section */
+.skills-section {
+  padding-top: 60px;
+}
 .skill-card {
   background: rgba(40, 44, 51, 0.5);
   border: 1px solid var(--color-border);
@@ -208,7 +211,7 @@ body {
 
 /* Contact Section */
 .contact-section {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 .contact-info {
@@ -243,7 +246,6 @@ body {
 .contact-link i {
   font-size: 1.5rem;
 }
-
 
 /* Footer */
 .footer {
@@ -294,8 +296,6 @@ body {
   color: var(--color-text-muted);
 }
 
-
-
 /* Animations */
 @keyframes pulse {
   0% {
@@ -326,7 +326,6 @@ body {
     margin-top: 1rem;
   }
 }
-
 
 @media (max-width: 768px) {
   .footer-content {
