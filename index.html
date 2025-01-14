@@ -4,14 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>José GARRANAS | Stagiaire MNS</title>
+    <!--  Leaflet CSS file & Javascript file -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <!-- bootstrap stylesheet -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- Icon library -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="custom.css" />
   </head>
 
@@ -54,16 +69,24 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#home">#Accueil</a>
+              <a class="nav-link" href="#home"
+                ><i class="fa-solid fa-hashtag fa-xs"></i>Accueil</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about-me">#À Propos</a>
+              <a class="nav-link" href="#about-me"
+                ><i class="fa-solid fa-hashtag fa-xs"></i>À Propos</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#works">#Projets</a>
+              <a class="nav-link" href="#works"
+                ><i class="fa-solid fa-hashtag fa-xs"></i>Projets</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contacts">#Contact</a>
+              <a class="nav-link" href="#contacts"
+                ><i class="fa-solid fa-hashtag fa-xs"></i>Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -74,8 +97,10 @@
     <section id="home" class="hero-section">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-7">
-            <span class="text-accent display-6 mb-4">#Salut, je suis</span>
+          <div class="col-lg-8">
+            <span class="text-accent display-6 mb-4"
+              ><i class="fa-solid fa-hashtag fa-xs"></i>Salut, je suis</span
+            >
             <h1 class="display-3">José GARRANAS</h1>
             <span class="text-accent display-5 mb-4"
               >Stagiaire Développeur Web</span
@@ -88,7 +113,7 @@
               </button></a
             >
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-4">
             <div class="hero-image">
               <img
                 src="src/img/photo-provisoire.webp"
@@ -120,9 +145,13 @@
     <!-- About Section -->
     <section id="about-me" class="about-section">
       <div class="container">
-        <h2 class="section-title">#À Propos</h2>
-        <div class="row align-items-center">
-          <div class="col-lg-6">
+        <div class="section-header">
+          <h2 class="section-title">
+            <i class="fa-solid fa-hashtag fa-xs"></i>À Propos
+          </h2>
+        </div>
+        <div class="row g-4 align-items-center mt-2">
+          <div class="col-lg-4">
             <div class="about-image">
               <img
                 src="src/img/photo-provisoire.webp"
@@ -131,7 +160,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-8">
             <p class="about-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
               iste dolorum hic, doloribus earum nulla quo, officiis maiores
@@ -147,7 +176,9 @@
     <section id="works" class="projects-section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">#Projets</h2>
+          <h2 class="section-title">
+            <i class="fa-solid fa-hashtag fa-xs"></i>Projets
+          </h2>
           <!-- <a href="#" class="view-all">Voir plus <i class="fas fa-arrow-right"></i></a> -->
         </div>
         <div class="row g-4 mt-2">
@@ -241,7 +272,9 @@
           </div>
         </div>
         <div class="section-header mt-5">
-          <h2 class="section-title">#Petits Projets</h2>
+          <h2 class="section-title">
+            <i class="fa-solid fa-hashtag fa-xs"></i>Petits Projets
+          </h2>
           <!-- <a href="#" class="view-all">Voir plus <i class="fas fa-arrow-right"></i></a> -->
         </div>
         <div class="row g-4 mt-2">
@@ -315,7 +348,9 @@
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
       <div class="container">
-        <h2 class="section-title">#Compétences</h2>
+        <h2 class="section-title">
+          <i class="fa-solid fa-hashtag fa-xs"></i>Compétences
+        </h2>
         <div class="row g-4 mt-2">
           <div class="col-md-3">
             <div class="skill-card">
@@ -366,7 +401,9 @@
     <!-- Contact Section -->
     <section id="contacts" class="contact-section">
       <div class="container">
-        <h2 class="section-title">#Contact</h2>
+        <h2 class="section-title">
+          <i class="fa-solid fa-hashtag fa-xs"></i>Contact
+        </h2>
         <div class="row g-4 mt-2">
           <div class="col-lg-6">
             <div class="contact-info">
@@ -404,6 +441,7 @@
           </div>
           <div class="col-lg-6">
             <!-- Ajout Maps -->
+            <div id="map"></div>
           </div>
         </div>
       </div>
@@ -450,6 +488,10 @@
         </div>
       </div>
     </footer>
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
