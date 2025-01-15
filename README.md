@@ -30,7 +30,7 @@ portfolio-mns/
 
 ## Démonstration
 
-Voir le site en direct : [Portfolio](https://mxochenz.github.io/Portfolio-mns/)
+Voir le site en direct : [Portfolio](https://mxochenz.github.io/portfolio-mns/)
 
 ## 📧 Contact
 
