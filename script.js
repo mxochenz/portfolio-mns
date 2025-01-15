@@ -80,3 +80,18 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// cookies popup
+
+// Particles background
+window.onload = function () {
+  Particles.init({
+    selector: ".background",
+    maxParticles: 100,
+    connectParticles: "true",
+    speed: 0.8,
+    minDistance: 140,
+    sizeVariations: 4,
+    color: "#636161",
+  });
+};
