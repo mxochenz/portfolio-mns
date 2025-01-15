@@ -1,622 +1,468 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio de José Garranas, stagiaire développeur web en formation à Metz Numeric School. Actuellement en recherche d'un stage. Découvrez mes projets, compétences en développement web et design, et contactez-moi pour collaborer."
-    />
 
-    <title>José GARRANAS | Stagiaire MNS</title>
-    <!--  Leaflet CSS file & Javascript file -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
-    <!-- bootstrap stylesheet -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <!-- Icon library -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <!-- AOS stylesheet -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="custom.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio de José Garranas, stagiaire développeur web en formation à Metz Numeric School. Actuellement en recherche d'un stage. Découvrez mes projets, compétences en développement web et design, et contactez-moi pour collaborer." />
 
-  <body class="bg-dark">
-    <!-- Side Social Links -->
-    <div class="social-sidebar">
-      <a
-        href="https://github.com/mxochenz"
-        target="_blank"
-        class="social-link"
-        aria-label="lien vers le github de José Garranas"
-      >
-        <i class="fab fa-github fa-beat-fade"></i>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/jos%C3%A9-garranas-6801a6295/"
-        target="_blank"
-        class="social-link"
-        aria-label="lien vers le linkedin de José Garranas"
-      >
-        <i class="fab fa-linkedin fa-beat-fade"></i>
-      </a>
-      <a
-        href="src/Garranas-Cv-Stagiaire.pdf"
-        target="_blank"
-        class="social-link"
-        aria-label="lien vers le CV de José Garranas"
-      >
-        <i class="fa-regular fa-file fa-beat-fade"></i>
-      </a>
-    </div>
+  <title>José GARRANAS | Stagiaire MNS</title>
+  <!--  Leaflet CSS file & Javascript file -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- bootstrap stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- Icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="custom.css" />
+</head>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#home">
-          <i class="fas fa-code fa-lg"></i> JG
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home"
-                ><i class="fa-solid fa-hashtag fa-xs"></i>Accueil</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about-me"
-                ><i class="fa-solid fa-hashtag fa-xs"></i>À Propos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#works"
-                ><i class="fa-solid fa-hashtag fa-xs"></i>Projets</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacts"
-                ><i class="fa-solid fa-hashtag fa-xs"></i>Contact</a
-              >
-            </li>
-          </ul>
-        </div>
+<body class="bg-dark">
+  <!-- Side Social Links -->
+  <div class="social-sidebar">
+    <a href="https://github.com/mxochenz" target="_blank" class="social-link"
+      aria-label="lien vers le github de José Garranas">
+      <i class="fab fa-github fa-beat-fade"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/jos%C3%A9-garranas-6801a6295/" target="_blank" class="social-link"
+      aria-label="lien vers le linkedin de José Garranas">
+      <i class="fab fa-linkedin fa-beat-fade"></i>
+    </a>
+    <a href="src/Garranas-Cv-Stagiaire.pdf" target="_blank" class="social-link"
+      aria-label="lien vers le CV de José Garranas">
+      <i class="fa-regular fa-file fa-beat-fade"></i>
+    </a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <i class="fas fa-code fa-lg"></i> JG
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home"><i class="fa-solid fa-hashtag fa-xs"></i>Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me"><i class="fa-solid fa-hashtag fa-xs"></i>À Propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#works"><i class="fa-solid fa-hashtag fa-xs"></i>Projets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts"><i class="fa-solid fa-hashtag fa-xs"></i>Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Canva particles background -->
-    <canvas class="background"></canvas>
+    </div>
+  </nav>
+  <!-- Canva particles background -->
+  <canvas class="background"></canvas>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-8">
-            <span class="text-accent display-6 mb-4"
-              ><i class="fa-solid fa-hashtag fa-xs"></i>Salut, je suis</span
-            >
-            <h1 class="display-3">José GARRANAS</h1>
-            <span class="text-accent display-5 mb-4"
-              >Stagiaire Développeur Web</span
-            >
-            <p class="display-6 mt-4">En Formation à Metz Numeric School</p>
-            <p class="lead mb-4"></p>
-            <a
-              href="mailto:contact@chenz.com"
-              class="contact-link btn btn-outline-light btn-lg"
-              aria-label="lien vers l'email de José Garranas"
-            >
-              Contactez moi!!
-            </a>
-          </div>
-          <div class="col-lg-4">
-            <div class="hero-image">
-              <img
-                src="src/img/photo-provisoire.webp"
-                alt="Profile"
-                class="img-fluid"
-              />
-              <div class="status-badge">
-                <span class="status-dot"></span>
-                Actuellement en Recherche de Stage
-              </div>
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <span class="text-accent display-6 mb-4"><i class="fa-solid fa-hashtag fa-xs"></i>Salut, je suis</span>
+          <h1 class="display-3">José GARRANAS</h1>
+          <span class="text-accent display-5 mb-4">Stagiaire Développeur Web</span>
+          <p class="display-6 mt-4">En Formation à Metz Numeric School</p>
+          <p class="lead mb-4"></p>
+          <a href="mailto:contact@chenz.com" class="contact-link btn btn-outline-light btn-lg"
+            aria-label="lien vers l'email de José Garranas">
+            Contactez moi!!
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <div class="hero-image">
+            <img src="src/img/photo-provisoire.webp" alt="Profile" class="img-fluid" />
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              Actuellement en Recherche de Stage
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quote Section -->
-    <div class="quote-section">
-      <div class="container d-flex justify-content-center">
-        <div class="quote-box">
-          <p class="quote-text">
-            "Il faut d'abord résoudre le problème. Ensuite, écrivez le code."
-          </p>
-          <p class="quote-author">John Johnson</p>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about-me" class="about-section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">
-            <i class="fa-solid fa-hashtag fa-xs"></i>À Propos
-          </h2>
-        </div>
-        <div class="row g-4 align-items-center mt-2">
-          <div
-            class="col-lg-5"
-            data-aos="fade-right"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
-          >
-            <div class="about-image">
-              <img
-                src="src/img/photo-provisoire.webp"
-                alt="About Me"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div
-            class="col-lg-7"
-            data-aos="fade-left"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
-          >
-            <p class="about-text">
-              Bienvenue dans mon univers ! Je suis un développeur web passionné
-              avec une histoire un peu particulière.
-            </p>
-            <p class="about-text">
-              Pendant 23 ans, j'ai orchestré des expériences client mémorables
-              dans l'univers de l'hôtellerie-restauration. Cette aventure m'a
-              appris l'importance des détails, de l'écoute et de l'excellence
-              dans le service. Mais au fil des années, une autre passion
-              grandissait : le développement web.
-            </p>
-            <p class="about-text">
-              Aujourd'hui, je vis pleinement cette passion à Metz Numeric
-              School, où je me forme au développement web et mobile. Cette
-              reconversion n'est pas un hasard - c'est la continuation naturelle
-              de mon désir de créer des expériences qui marquent, mais cette
-              fois-ci à travers le code.
-            </p>
-            <p class="about-text">
-              Ce qui me rend unique ? C'est justement ce mélange entre ma
-              connaissance approfondie des besoins utilisateurs, acquise sur le
-              terrain, et ma passion pour le développement web. Chaque projet
-              que vous découvrirez ici est pensé avec cette double approche :
-              une technique solide au service d'une expérience utilisateur
-              intuitive.
-            </p>
-            <p class="about-text">
-              Mon portfolio est le reflet de cette vision - un pont entre
-              l'humain et la technologie. Explorez mes projets, et découvrez
-              comment je transforme les défis en solutions web élégantes et
-              accessibles."
-            </p>
-          </div>
-        </div>
+  <!-- Quote Section -->
+  <div class="quote-section">
+    <div class="container d-flex justify-content-center">
+      <div class="quote-box">
+        <p class="quote-text">
+          "Il faut d'abord résoudre le problème. Ensuite, écrivez le code."
+        </p>
+        <p class="quote-author">John Johnson</p>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- Projects Section -->
-    <section id="works" class="projects-section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">
-            <i class="fa-solid fa-hashtag fa-xs"></i>Projets
-          </h2>
-          <!-- <a href="#" class="view-all">Voir plus <i class="fas fa-arrow-right"></i></a> -->
-        </div>
-        <div class="row g-4 mt-2">
-          <!-- Portfolio Num&Boost -->
-          <div
-            class="col-md-4"
-            data-aos="zoom-in-up"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
-          >
-            <div class="project-card">
-              <div class="project-image">
-                <img
-                  src="src/img/mockup-portfolio-num&boost.webp"
-                  alt="Mockup portfolio Num&Boost"
-                />
-              </div>
-              <div class="project-content">
-                <div class="tech-stack">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                </div>
-                <h3>Portfolio Num&Boost</h3>
-                <p>Mon Premier Projet</p>
-                <div class="project-links">
-                  <a
-                    href="https://mxochenz.github.io/Portfolio"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    aria-label="lien vers le github page du portfolio effectué pendant le Num&Boost"
-                    >En Ligne <i class="fas fa-arrow-right"></i
-                  ></a>
-                  <a
-                    href="https://github.com/mxochenz/Portfolio"
-                    target="_blank"
-                    class="btn btn-outline-secondary btn-sm"
-                    aria-label="lien vers le repos github du portfolio effectué pendant le Num&Boost"
-                    >Repos <i class="fab fa-github"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 2 -->
-          <div
-            class="col-md-4"
-            data-aos="zoom-in-up"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
-          >
-            <div class="project-card">
-              <div class="project-image">
-                <img
-                  src="src/img/mockup-site-wordpress-jbartenfil.webp"
-                  alt="Mockup site wordpress JB Art en fil"
-                />
-              </div>
-              <div class="project-content">
-                <div class="tech-stack">
-                  <span>Wordpress</span>
-                </div>
-                <h3>JB Art en Fil</h3>
-                <p>Site Vitrine Wordpress</p>
-                <div class="project-links">
-                  <a
-                    href="https://www.jbartenfil.fr/"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    aria-label="lien vers le site wordpress de JB Art en Fil effectué pendant le stage de remise à niveau"
-                    >En Ligne <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 3 -->
-          <div
-            class="col-md-4"
-            data-aos="zoom-in-up"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
-          >
-            <div class="project-card">
-              <div class="project-image">
-                <img
-                  src="src/img/mockup-projet-hackathon-RAN.webp"
-                  alt="Projet 3"
-                />
-              </div>
-              <div class="project-content">
-                <div class="tech-stack">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                </div>
-                <h3>Projet Hackathon</h3>
-                <p>Escape Game 2024 | Team RAN-parts du Dev</p>
-                <div class="project-links">
-                  <a
-                    href="https://fonzy57.github.io/escape-dev/"
-                    target="_blank"
-                    class="btn btn-outline-light btn-sm"
-                    aria-label="lien vers le github page du projet Hackathon effectué en équipe"
-                    >En Ligne <i class="fas fa-arrow-right"></i
-                  ></a>
-                  <a
-                    href="https://github.com/Fonzy57/escape-dev"
-                    target="_blank"
-                    class="btn btn-outline-secondary btn-sm"
-                    aria-label="lien vers le repos github du projet Hackathon effectué en équipe"
-                    >Repos <i class="fab fa-github"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section-header mt-5">
-          <h2 class="section-title">
-            <i class="fa-solid fa-hashtag fa-xs"></i>Petits Projets
-          </h2>
-          <!-- <a href="#" class="view-all">Voir plus <i class="fas fa-arrow-right"></i></a> -->
-        </div>
-        <div class="row g-4 mt-2">
-          <!-- Portfolio Num&Boost -->
-          <div class="col-md-4">
-            <div class="project-card">
-              <div class="project-content">
-                <div class="tech-stack">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                </div>
-                <h3>Calculatrice</h3>
-                <p></p>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/mxochenz/Calculatrice"
-                    target="_blank"
-                    class="btn btn-outline-secondary btn-sm"
-                    aria-label="lien vers le repos github du projet calculatrice"
-                    >Repos <i class="fab fa-github"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 2 -->
-          <div class="col-md-4">
-            <div class="project-card">
-              <div class="project-content">
-                <div class="tech-stack">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                </div>
-                <h3>Meteo Web App</h3>
-                <p></p>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/mxochenz/Portfolio"
-                    target="_blank"
-                    class="btn btn-outline-secondary btn-sm"
-                    aria-label="lien vers le repos github du projet Meteo web app"
-                    >Repos <i class="fab fa-github"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 3 -->
-          <div class="col-md-4">
-            <div class="project-card">
-              <div class="project-content">
-                <div class="tech-stack">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                </div>
-                <h3>Liste de Tâches Simple</h3>
-                <p></p>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/mxochenz/to-do-list"
-                    target="_blank"
-                    class="btn btn-outline-secondary btn-sm"
-                    aria-label="lien vers le repos github du projet liste de tâches"
-                    >Repos <i class="fab fa-github"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-      <div class="container">
+  <!-- About Section -->
+  <section id="about-me" class="about-section">
+    <div class="container">
+      <div class="section-header">
         <h2 class="section-title">
-          <i class="fa-solid fa-hashtag fa-xs"></i>Compétences
+          <i class="fa-solid fa-hashtag fa-xs"></i>À Propos
         </h2>
-        <div class="row g-4 mt-2">
-          <div class="col-lg-3 col-md-6">
-            <div class="skill-card">
-              <h3>Langages</h3>
-              <div class="skill-list">
+      </div>
+      <div class="row g-4 align-items-center mt-2">
+        <div class="col-lg-5">
+          <div class="about-image">
+            <img src="src/img/photo-provisoire.webp" alt="About Me" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <p class="about-text">
+            Bienvenue dans mon univers ! Je suis un développeur web passionné
+            avec une histoire un peu particulière.
+          </p>
+          <p class="about-text">
+            Pendant 23 ans, j'ai orchestré des expériences client mémorables
+            dans l'univers de l'hôtellerie-restauration. Cette aventure m'a
+            appris l'importance des détails, de l'écoute et de l'excellence
+            dans le service. Mais au fil des années, une autre passion
+            grandissait : le développement web.
+          </p>
+          <p class="about-text">
+            Aujourd'hui, je vis pleinement cette passion à Metz Numeric
+            School, où je me forme au développement web et mobile. Cette
+            reconversion n'est pas un hasard - c'est la continuation naturelle
+            de mon désir de créer des expériences qui marquent, mais cette
+            fois-ci à travers le code.
+          </p>
+          <p class="about-text">
+            Ce qui me rend unique ? C'est justement ce mélange entre ma
+            connaissance approfondie des besoins utilisateurs, acquise sur le
+            terrain, et ma passion pour le développement web. Chaque projet
+            que vous découvrirez ici est pensé avec cette double approche :
+            une technique solide au service d'une expérience utilisateur
+            intuitive.
+          </p>
+          <p class="about-text">
+            Mon portfolio est le reflet de cette vision - un pont entre
+            l'humain et la technologie. Explorez mes projets, et découvrez
+            comment je transforme les défis en solutions web élégantes et
+            accessibles."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="works" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <i class="fa-solid fa-hashtag fa-xs"></i>Projets
+        </h2>
+        <!-- <a href="#" class="view-all">Voir plus <i class="fas fa-arrow-right"></i></a> -->
+      </div>
+      <div class="row g-4 mt-2">
+        <!-- Portfolio Num&Boost -->
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="src/img/mockup-portfolio-num&boost.webp" alt="Mockup portfolio Num&Boost" />
+            </div>
+            <div class="project-content">
+              <div class="tech-stack">
                 <span>HTML</span>
                 <span>CSS</span>
-                <span>Python</span>
+              </div>
+              <h3>Portfolio Num&Boost</h3>
+              <p>Mon Premier Projet</p>
+              <div class="project-links">
+                <a href="https://mxochenz.github.io/Portfolio" target="_blank" class="btn btn-outline-light btn-sm"
+                  aria-label="lien vers le github page du portfolio effectué pendant le Num&Boost">En Ligne <i
+                    class="fas fa-arrow-right"></i></a>
+                <a href="https://github.com/mxochenz/Portfolio" target="_blank" class="btn btn-outline-secondary btn-sm"
+                  aria-label="lien vers le repos github du portfolio effectué pendant le Num&Boost">Repos <i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Projet 2 -->
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="src/img/mockup-site-wordpress-jbartenfil.webp" alt="Mockup site wordpress JB Art en fil" />
+            </div>
+            <div class="project-content">
+              <div class="tech-stack">
+                <span>Wordpress</span>
+              </div>
+              <h3>JB Art en Fil</h3>
+              <p>Site Vitrine Wordpress</p>
+              <div class="project-links">
+                <a href="https://www.jbartenfil.fr/" target="_blank" class="btn btn-outline-light btn-sm"
+                  aria-label="lien vers le site wordpress de JB Art en Fil effectué pendant le stage de remise à niveau">En
+                  Ligne <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Projet 3 -->
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="src/img/mockup-projet-hackathon-RAN.webp" alt="Projet 3" />
+            </div>
+            <div class="project-content">
+              <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
                 <span>JavaScript</span>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="skill-card">
-              <h3>Base de Données</h3>
-              <div class="skill-list">
-                <span>SQL</span>
-                <!-- <span></span>
-              <span></span> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="skill-card">
-              <h3>Outils</h3>
-              <div class="skill-list">
-                <span>VSCode</span>
-                <span>Figma</span>
-                <!-- <span></span>
-              <span></span> -->
-                <span>Git</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="skill-card">
-              <h3>Frameworks</h3>
-              <div class="skill-list">
-                <span>Bootstrap</span>
-                <!-- <span></span> -->
+              <h3>Projet Hackathon</h3>
+              <p>Escape Game 2024 | Team RAN-parts du Dev</p>
+              <div class="project-links">
+                <a href="https://fonzy57.github.io/escape-dev/" target="_blank" class="btn btn-outline-light btn-sm"
+                  aria-label="lien vers le github page du projet Hackathon effectué en équipe">En Ligne <i
+                    class="fas fa-arrow-right"></i></a>
+                <a href="https://github.com/Fonzy57/escape-dev" target="_blank" class="btn btn-outline-secondary btn-sm"
+                  aria-label="lien vers le repos github du projet Hackathon effectué en équipe">Repos <i
+                    class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contacts" class="contact-section">
-      <div class="container">
+      <div class="section-header mt-5">
         <h2 class="section-title">
-          <i class="fa-solid fa-hashtag fa-xs"></i>Contact
+          <i class="fa-solid fa-hashtag fa-xs"></i>Petits Projets
         </h2>
-        <div class="row g-4 mt-2">
-          <div class="col-lg-6">
-            <div class="contact-info">
-              <p class="lead mb-4">
-                Je suis intéressé par les opportunités de stage. N'hésitez pas à
-                me contacter :
-              </p>
-              <div class="contact-links">
-                <a
-                  href="mailto:contact@chenz.com"
-                  class="contact-link"
-                  aria-label="lien vers l'email de José"
-                >
-                  <i class="fa-regular fa-at"></i>
-                  <span>contact@chenz.com</span>
-                </a>
-                <a href="tel:+33771852583" class="contact-link">
-                  <i class="fa-solid fa-mobile-screen"></i>
-                  <span>+33 7 71 85 25 83</span>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/jos%C3%A9-garranas-6801a6295/"
-                  target="_blank"
-                  class="contact-link"
-                  aria-label="lien vers le linkedin de José"
-                >
-                  <i class="fab fa-linkedin"></i>
-                  <span>LinkedIn</span>
-                </a>
-                <a
-                  href="https://github.com/mxochenz"
-                  target="_blank"
-                  class="contact-link"
-                  aria-label="lien vers le github de José"
-                >
-                  <i class="fab fa-github"></i>
-                  <span>GitHub</span>
-                </a>
+        <!-- <a href="#" class="view-all">Voir plus <i class="fas fa-arrow-right"></i></a> -->
+      </div>
+      <div class="row g-4 mt-2">
+        <!-- Portfolio Num&Boost -->
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="project-content">
+              <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <h3>Calculatrice</h3>
+              <p></p>
+              <div class="project-links">
+                <a href="https://github.com/mxochenz/Calculatrice" target="_blank"
+                  class="btn btn-outline-secondary btn-sm"
+                  aria-label="lien vers le repos github du projet calculatrice">Repos <i class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <!-- Ajout Maps -->
-            <div id="map"></div>
+        </div>
+        <!-- Projet 2 -->
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="project-content">
+              <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <h3>Meteo Web App</h3>
+              <p></p>
+              <div class="project-links">
+                <a href="https://github.com/mxochenz/Portfolio" target="_blank" class="btn btn-outline-secondary btn-sm"
+                  aria-label="lien vers le repos github du projet Meteo web app">Repos <i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Projet 3 -->
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="project-content">
+              <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <h3>Liste de Tâches Simple</h3>
+              <p></p>
+              <div class="project-links">
+                <a href="https://github.com/mxochenz/to-do-list" target="_blank"
+                  class="btn btn-outline-secondary btn-sm"
+                  aria-label="lien vers le repos github du projet liste de tâches">Repos <i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="footer-info">
-                <div class="footer-logo"><i class="fas fa-code"></i> JG</div>
-                <p class="footer-text">
-                  Stagiaire de la Formation développeur web<br />Metz Numeric
-                  School
-                </p>
-              </div>
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2 class="section-title">
+        <i class="fa-solid fa-hashtag fa-xs"></i>Compétences
+      </h2>
+      <div class="row g-4 mt-2">
+        <div class="col-lg-3 col-md-6">
+          <div class="skill-card">
+            <h3>Langages</h3>
+            <div class="skill-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Python</span>
+              <span>JavaScript</span>
             </div>
-            <div class="col-lg-6">
-              <div class="footer-links">
-                <div class="footer-section">
-                  <div class="social-links">
-                    <a
-                      href="https://github.com/mxochenz"
-                      target="_blank"
-                      aria-label="lien vers le github de José"
-                      ><i class="fab fa-github fa-lg"></i
-                    ></a>
-                    <a
-                      href="https://www.linkedin.com/in/jos%C3%A9-garranas-6801a6295/"
-                      target="_blank"
-                      aria-label="lien vers le linkedin de José"
-                      ><i class="fab fa-linkedin fa-lg"></i
-                    ></a>
-                  </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="skill-card">
+            <h3>Base de Données</h3>
+            <div class="skill-list">
+              <span>SQL</span>
+              <!-- <span></span>
+              <span></span> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="skill-card">
+            <h3>Outils</h3>
+            <div class="skill-list">
+              <span>VSCode</span>
+              <span>Figma</span>
+              <!-- <span></span>
+              <span></span> -->
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="skill-card">
+            <h3>Frameworks</h3>
+            <div class="skill-list">
+              <span>Bootstrap</span>
+              <!-- <span></span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contacts" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">
+        <i class="fa-solid fa-hashtag fa-xs"></i>Contact
+      </h2>
+      <div class="row g-4 mt-2">
+        <div class="col-lg-6">
+          <div class="contact-info">
+            <p class="lead mb-4">
+              Je suis intéressé par les opportunités de stage. N'hésitez pas à
+              me contacter :
+            </p>
+            <div class="contact-links">
+              <a href="mailto:contact@chenz.com" class="contact-link" aria-label="lien vers l'email de José">
+                <i class="fa-regular fa-at"></i>
+                <span>contact@chenz.com</span>
+              </a>
+              <a href="tel:+33771852583" class="contact-link">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span>+33 7 71 85 25 83</span>
+              </a>
+              <a href="https://www.linkedin.com/in/jos%C3%A9-garranas-6801a6295/" target="_blank" class="contact-link"
+                aria-label="lien vers le linkedin de José">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com/mxochenz" target="_blank" class="contact-link"
+                aria-label="lien vers le github de José">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <!-- Ajout Maps -->
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="footer-info">
+              <div class="footer-logo"><i class="fas fa-code"></i> JG</div>
+              <p class="footer-text">
+                Stagiaire de la Formation développeur web<br />Metz Numeric
+                School
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="footer-links">
+              <div class="footer-section">
+                <div class="social-links">
+                  <a href="https://github.com/mxochenz" target="_blank" aria-label="lien vers le github de José"><i
+                      class="fab fa-github fa-lg"></i></a>
+                  <a href="https://www.linkedin.com/in/jos%C3%A9-garranas-6801a6295/" target="_blank"
+                    aria-label="lien vers le linkedin de José"><i class="fab fa-linkedin fa-lg"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <div class="row">
-            <div class="col-12 text-center">
-              <p>© 2024 José GARRANAS. Tous droits réservés.</p>
-            </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p>© 2024 José GARRANAS. Tous droits réservés.</p>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- Back to top button -->
-    <button
-      type="button"
-      class="btn btn-floating btn-lg"
-      id="btn-back-to-top"
-      aria-label="bouton de navigation vers le haut de la page"
-    >
-      <i class="fas fa-arrow-up"></i>
-    </button>
-    <!-- Cookies popup -->
+    </div>
+  </footer>
+  <!-- Back to top button -->
+  <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top"
+    aria-label="bouton de navigation vers le haut de la page">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <!-- Cookies popup -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+  <!-- Particlesjs librarie -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
 
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-    <!-- AOS Animations -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <!-- Javascript custom -->
+  <script src="script.js"></script>
+</body>
 
-    <script src="script.js"></script>
-  </body>
 </html>
