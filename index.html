@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de José Garranas, stagiaire développeur web en formation à Metz Numeric School. Actuellement en recherche d'un stage. Découvrez mes projets, compétences en développement web et design, et contactez-moi pour collaborer."
+    />
+
     <title>José GARRANAS | Stagiaire MNS</title>
     <!--  Leaflet CSS file & Javascript file -->
     <link
@@ -37,13 +42,19 @@
   <body class="bg-dark">
     <!-- Side Social Links -->
     <div class="social-sidebar">
-      <a href="https://github.com/mxochenz" target="_blank" class="social-link">
+      <a
+        href="https://github.com/mxochenz"
+        target="_blank"
+        class="social-link"
+        aria-label="lien vers le github de José Garranas"
+      >
         <i class="fab fa-github fa-beat-fade"></i>
       </a>
       <a
         href="https://www.linkedin.com/in/jos%C3%A9-garranas-6801a6295/"
         target="_blank"
         class="social-link"
+        aria-label="lien vers le linkedin de José Garranas"
       >
         <i class="fab fa-linkedin fa-beat-fade"></i>
       </a>
@@ -51,6 +62,7 @@
         href="src/Garranas-Cv-Stagiaire.pdf"
         target="_blank"
         class="social-link"
+        aria-label="lien vers le CV de José Garranas"
       >
         <i class="fa-regular fa-file fa-beat-fade"></i>
       </a>
@@ -67,6 +79,7 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -113,11 +126,13 @@
             >
             <p class="display-6 mt-4">En Formation à Metz Numeric School</p>
             <p class="lead mb-4"></p>
-            <a href="mailto:contact@chenz.com" class="contact-link"
-              ><button class="btn btn-outline-light btn-lg">
-                Contactez moi!!
-              </button></a
+            <a
+              href="mailto:contact@chenz.com"
+              class="contact-link btn btn-outline-light btn-lg"
+              aria-label="lien vers l'email de José Garranas"
             >
+              Contactez moi!!
+            </a>
           </div>
           <div class="col-lg-4">
             <div class="hero-image">
@@ -137,7 +152,7 @@
     </section>
 
     <!-- Quote Section -->
-    <section class="quote-section">
+    <div class="quote-section">
       <div class="container d-flex justify-content-center">
         <div class="quote-box">
           <p class="quote-text">
@@ -146,7 +161,7 @@
           <p class="quote-author">John Johnson</p>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- About Section -->
     <section id="about-me" class="about-section">
@@ -248,12 +263,16 @@
                 <div class="project-links">
                   <a
                     href="https://mxochenz.github.io/Portfolio"
+                    target="_blank"
                     class="btn btn-outline-light btn-sm"
+                    aria-label="lien vers le github page du portfolio effectué pendant le Num&Boost"
                     >En Ligne <i class="fas fa-arrow-right"></i
                   ></a>
                   <a
                     href="https://github.com/mxochenz/Portfolio"
+                    target="_blank"
                     class="btn btn-outline-secondary btn-sm"
+                    aria-label="lien vers le repos github du portfolio effectué pendant le Num&Boost"
                     >Repos <i class="fab fa-github"></i
                   ></a>
                 </div>
@@ -283,7 +302,9 @@
                 <div class="project-links">
                   <a
                     href="https://www.jbartenfil.fr/"
+                    target="_blank"
                     class="btn btn-outline-light btn-sm"
+                    aria-label="lien vers le site wordpress de JB Art en Fil effectué pendant le stage de remise à niveau"
                     >En Ligne <i class="fas fa-arrow-right"></i
                   ></a>
                 </div>
@@ -315,12 +336,16 @@
                 <div class="project-links">
                   <a
                     href="https://fonzy57.github.io/escape-dev/"
+                    target="_blank"
                     class="btn btn-outline-light btn-sm"
+                    aria-label="lien vers le github page du projet Hackathon effectué en équipe"
                     >En Ligne <i class="fas fa-arrow-right"></i
                   ></a>
                   <a
                     href="https://github.com/Fonzy57/escape-dev"
+                    target="_blank"
                     class="btn btn-outline-secondary btn-sm"
+                    aria-label="lien vers le repos github du projet Hackathon effectué en équipe"
                     >Repos <i class="fab fa-github"></i
                   ></a>
                 </div>
@@ -349,7 +374,9 @@
                 <div class="project-links">
                   <a
                     href="https://github.com/mxochenz/Calculatrice"
+                    target="_blank"
                     class="btn btn-outline-secondary btn-sm"
+                    aria-label="lien vers le repos github du projet calculatrice"
                     >Repos <i class="fab fa-github"></i
                   ></a>
                 </div>
@@ -370,7 +397,9 @@
                 <div class="project-links">
                   <a
                     href="https://github.com/mxochenz/Portfolio"
+                    target="_blank"
                     class="btn btn-outline-secondary btn-sm"
+                    aria-label="lien vers le repos github du projet Meteo web app"
                     >Repos <i class="fab fa-github"></i
                   ></a>
                 </div>
@@ -391,7 +420,9 @@
                 <div class="project-links">
                   <a
                     href="https://github.com/mxochenz/to-do-list"
+                    target="_blank"
                     class="btn btn-outline-secondary btn-sm"
+                    aria-label="lien vers le repos github du projet liste de tâches"
                     >Repos <i class="fab fa-github"></i
                   ></a>
                 </div>
@@ -469,7 +500,11 @@
                 me contacter :
               </p>
               <div class="contact-links">
-                <a href="mailto:contact@chenz.com" class="contact-link">
+                <a
+                  href="mailto:contact@chenz.com"
+                  class="contact-link"
+                  aria-label="lien vers l'email de José"
+                >
                   <i class="fa-regular fa-at"></i>
                   <span>contact@chenz.com</span>
                 </a>
@@ -481,6 +516,7 @@
                   href="https://www.linkedin.com/in/jos%C3%A9-garranas-6801a6295/"
                   target="_blank"
                   class="contact-link"
+                  aria-label="lien vers le linkedin de José"
                 >
                   <i class="fab fa-linkedin"></i>
                   <span>LinkedIn</span>
@@ -489,6 +525,7 @@
                   href="https://github.com/mxochenz"
                   target="_blank"
                   class="contact-link"
+                  aria-label="lien vers le github de José"
                 >
                   <i class="fab fa-github"></i>
                   <span>GitHub</span>
@@ -522,12 +559,16 @@
               <div class="footer-links">
                 <div class="footer-section">
                   <div class="social-links">
-                    <a href="https://github.com/mxochenz" target="_blank"
+                    <a
+                      href="https://github.com/mxochenz"
+                      target="_blank"
+                      aria-label="lien vers le github de José"
                       ><i class="fab fa-github fa-lg"></i
                     ></a>
                     <a
                       href="https://www.linkedin.com/in/jos%C3%A9-garranas-6801a6295/"
                       target="_blank"
+                      aria-label="lien vers le linkedin de José"
                       ><i class="fab fa-linkedin fa-lg"></i
                     ></a>
                   </div>
@@ -546,7 +587,12 @@
       </div>
     </footer>
     <!-- Back to top button -->
-    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+    <button
+      type="button"
+      class="btn btn-floating btn-lg"
+      id="btn-back-to-top"
+      aria-label="bouton de navigation vers le haut de la page"
+    >
       <i class="fas fa-arrow-up"></i>
     </button>
     <!-- Cookies popup -->
