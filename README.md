@@ -7,11 +7,8 @@ Portfolio professionnel développé avec Bootstrap, présentant mes projets et c
 ## 🚀 Fonctionnalités
 
 - Design responsive compatible tous appareils
-- Sections pour projets, compétences et expériences
-- Formulaire de contact interactif
-- Navigation fluide et intuitive
-- Animations et transitions modernes
-
+- Sections pour projets et compétences
+  
 ## 🛠️ Technologies Utilisées
 
 - HTML5
