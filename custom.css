@@ -278,7 +278,7 @@ i.fa-code {
 }
 
 #map {
-  height: 336px;
+  height: 400px;
   border: 2px solid var(--color-border);
   border-radius: 8px;
 }
@@ -343,6 +343,7 @@ i.fa-code {
   top: 0px;
   left: 0px;
   z-index: -2;
+  overflow: hidden;
 }
 
 /* Back to top Button */
