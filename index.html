@@ -18,14 +18,18 @@
     ></script>
     <!-- bootstrap stylesheet -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
     <!-- Icon library -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <!-- AOS stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="custom.css" />
   </head>
@@ -153,7 +157,12 @@
           </h2>
         </div>
         <div class="row g-4 align-items-center mt-2">
-          <div class="col-lg-5">
+          <div
+            class="col-lg-5"
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <div class="about-image">
               <img
                 src="src/img/photo-provisoire.webp"
@@ -162,7 +171,12 @@
               />
             </div>
           </div>
-          <div class="col-lg-7">
+          <div
+            class="col-lg-7"
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <p class="about-text">
               Bienvenue dans mon univers ! Je suis un développeur web passionné
               avec une histoire un peu particulière.
@@ -211,7 +225,12 @@
         </div>
         <div class="row g-4 mt-2">
           <!-- Portfolio Num&Boost -->
-          <div class="col-md-4">
+          <div
+            class="col-md-4"
+            data-aos="zoom-in-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <div class="project-card">
               <div class="project-image">
                 <img
@@ -242,7 +261,12 @@
             </div>
           </div>
           <!-- Projet 2 -->
-          <div class="col-md-4">
+          <div
+            class="col-md-4"
+            data-aos="zoom-in-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <div class="project-card">
               <div class="project-image">
                 <img
@@ -267,7 +291,12 @@
             </div>
           </div>
           <!-- Projet 3 -->
-          <div class="col-md-4">
+          <div
+            class="col-md-4"
+            data-aos="zoom-in-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <div class="project-card">
               <div class="project-image">
                 <img
@@ -523,7 +552,25 @@
     <!-- Cookies popup -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS Animations -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script src="script.js"></script>
   </body>
 </html>
