@@ -15,8 +15,8 @@ body {
   line-height: 1.6;
 }
 
-i.fa-hashtag,
-i.fa-code {
+svg.fa-hashtag,
+svg.fa-code {
   color: var(--color-accent);
 }
 
@@ -271,11 +271,15 @@ i.fa-code {
   width: fit-content;
 }
 
+.contact-section .contact-link:hover {
+  color: var(--color-accent);
+}
+
 .contact-link:hover {
   transform: translateX(10px);
 }
 
-.contact-link i {
+.contact-link svg {
   font-size: 1.5rem;
 }
 
