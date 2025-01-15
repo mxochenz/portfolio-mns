@@ -269,7 +269,6 @@ i.fa-code {
 }
 
 .contact-link:hover {
-  color: var(--color-accent);
   transform: translateX(10px);
 }
 
@@ -317,6 +316,7 @@ i.fa-code {
 
 .social-links {
   display: flex;
+  justify-content: flex-end;
   gap: 1.5rem;
 }
 
