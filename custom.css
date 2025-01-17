@@ -242,7 +242,7 @@ svg.fa-code {
 
 .contact-info {
   height: 100%;
-  padding: 2rem;
+  padding: 1.5rem 1.5rem 0;
   background: rgba(40, 44, 51, 0.5);
   border: 1px solid var(--color-border);
   border-radius: 8px;
@@ -256,8 +256,8 @@ svg.fa-code {
 .contact-links {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 2rem;
+  /* gap: 1.5rem;
+  margin-top: 2rem; */
 }
 
 .contact-link {
@@ -430,7 +430,7 @@ svg.fa-code {
   }
 
   .contact-info {
-    padding: 1rem;
+    padding: 1.5rem 1rem 0;
   }
 
   .lead {
