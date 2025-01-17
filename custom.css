@@ -77,12 +77,12 @@ svg.fa-code {
 
 /* Hero Section */
 .hero-section {
-  padding: 140px 0 60px;
+  padding: 130px 0 60px;
   overflow: hidden;
 }
 
 .contact-link {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .text-accent {
@@ -397,12 +397,12 @@ svg.fa-code {
   }
 
   .hero-section {
-    padding: 100px 0 40px;
+    padding-bottom: 40px;
     text-align: center;
   }
 
   .hero-section .contact-link {
-    margin: 0 auto 1rem;
+    margin: 0 auto 40px;
   }
 
   .status-badge {
